@@ -15,10 +15,10 @@ BaselineOfSeasideExtras >> baseline: spec [
 			seaside: spec.
 
 		spec
-			package: 'Seaside-Extras' with: [ spec requires: #('Seaside-Core') ];
+			package: 'Seaside-Extras' with: [ spec requires: #('Seaside3-Core') ];
 			package: 'Javascript-Extras' with: [ spec requires: #('Javascript-Core') ];
 			package: 'JQuery-Extras' with: [ spec requires: #('JQuery-Core') ];
-			package: 'Bootstrap5-Extras' with: [ spec requires: #('Seaside-Core' 'Bootstrap5-Core') ].
+			package: 'Bootstrap5-Extras' with: [ spec requires: #('Seaside3-Core' 'Bootstrap5-Core') ].
 
 		spec
 			group: 'all' with: #('Seaside-Extras' 'Javascript-Extras' 'JQuery-Extras' 'Bootstrap5-Extras');
