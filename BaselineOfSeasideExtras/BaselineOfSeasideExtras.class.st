@@ -25,7 +25,7 @@ BaselineOfSeasideExtras >> baseline: spec [
 			group: 'Seaside' with: #('Seaside-Extras');
 			group: 'Javascript' with: #('Seaside-Extras' 'Javascript-Extras');
 			group: 'JQuery' with: #('Seaside-Extras' 'Javascript-Extras' 'JQuery-Extras');
-			group: 'Bootstrap5' with: #('Seaside-Extras' 'Bootstrap5-Extras');
+			group: 'Bootstrap' with: #('Seaside-Extras' 'Bootstrap5-Extras');
 			group: 'default' with: #('all').
 	]
 ]
@@ -34,8 +34,8 @@ BaselineOfSeasideExtras >> baseline: spec [
 BaselineOfSeasideExtras >> bootstrap5: spec [
 
 	spec
-		baseline: 'Bootstrap5remote' with: [ spec repository: 'github://astares/Seaside-Bootstrap5:master/src' ];
-		project: 'Bootstrap5-Core' copyFrom: 'Bootstrap5remote' with: [ spec loads: #( 'Core' ) ] 
+		baseline: 'Bootstrap5' with: [ spec repository: 'github://astares/Seaside-Bootstrap5:master/src' ];
+		project: 'Bootstrap5-Core' copyFrom: 'Bootstrap5' with: [ spec loads: #( 'Core' ) ] 
 ]
 
 { #category : 'baselines' }
