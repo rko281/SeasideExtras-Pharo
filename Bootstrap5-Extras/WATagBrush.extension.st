@@ -1,12 +1,12 @@
 Extension { #name : 'WATagBrush' }
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> alignItemsCenter [
 
 	self class: 'align-items-center'
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> class: aString magnitude: anInteger [
 
 	"Private - Utility for setting classes of the form 'gx-2'
@@ -24,7 +24,7 @@ WATagBrush >> class: aString magnitude: anInteger [
 	self class: out contents
 ]
 
-{ #category : '*Unpoly-Bootstrap-Extensions' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> class: aString size: responsiveTag [
 
 	"Private - Utility for setting classes of the form 'flex-md-grow-1'
@@ -34,7 +34,7 @@ WATagBrush >> class: aString size: responsiveTag [
 	^self class: aString size: responsiveTag magnitude: nil
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> class: aString size: responsiveTag magnitude: anInteger [
 
 	"Private - Utility for setting classes of the form 'flex-md-grow-1'
@@ -65,67 +65,67 @@ WATagBrush >> class: aString size: responsiveTag magnitude: anInteger [
 			[out	
 				nextPut: $-;
 				nextPutAll: in upToEnd]].
-		
+
 	anInteger isNil ifFalse: [out nextPut: $-; print: anInteger].
 
 	self class: out contents
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> flexGrow: aNumber [
 
 	self flexGrow: aNumber size: nil
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> flexGrow: aNumber size: aString [
 
 	self class: 'flex%grow' size: aString magnitude: aNumber
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> gutter: aNumber [
 
 	self gutter: aNumber size: nil
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> gutter: aNumber size: aString [
 
 	self class: 'g' size: aString magnitude: aNumber
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> gutterX: aNumber [
 
 	self gutterX: aNumber size: nil
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> gutterX: aNumber size: aString [
 
 	self class: 'gx' size: aString magnitude: aNumber
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> gutterY: aNumber [
 
 	self gutterY: aNumber size: nil
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> gutterY: aNumber size: aString [
 
 	self class: 'gy' size: aString magnitude: aNumber
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> marginEnd: aNumber [
 
 	self class: 'me-', aNumber asString
 ]
 
-{ #category : '*Bootstrap5/Core' }
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> marginStart: aNumber [
 
 	self class: 'ms-', aNumber asString
