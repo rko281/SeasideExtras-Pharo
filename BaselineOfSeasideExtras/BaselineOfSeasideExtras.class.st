@@ -34,8 +34,8 @@ BaselineOfSeasideExtras >> baseline: spec [
 BaselineOfSeasideExtras >> bootstrap5: spec [
 
 	spec
-		baseline: 'Bootstrap5' with: [ spec repository: 'github://astares/Seaside-Bootstrap5:master/src' ];
-		project: 'Bootstrap5-Core' copyFrom: 'Bootstrap5' with: [ spec loads: #( 'Core' ) ] 
+		baseline: 'Bootstrap5remote' with: [ spec repository: 'github://astares/Seaside-Bootstrap5:master/src' ];
+		project: 'Bootstrap5-Core' copyFrom: 'Bootstrap5remote' with: [ spec loads: #( 'Core' ) ] 
 ]
 
 { #category : 'baselines' }
