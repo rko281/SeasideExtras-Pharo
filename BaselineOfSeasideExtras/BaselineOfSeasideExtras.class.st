@@ -25,7 +25,7 @@ BaselineOfSeasideExtras >> baseline: spec [
 			group: 'Seaside' with: #('Seaside-Extras');
 			group: 'Javascript' with: #('Seaside-Extras' 'Javascript-Extras');
 			group: 'JQuery' with: #('Seaside-Extras' 'Javascript-Extras' 'JQuery-Extras');
-			group: 'Bootstrap5' with: #('Seaside-Extras' 'Bootstrap5');
+			group: 'Bootstrap5' with: #('Seaside-Extras' 'Bootstrap5-Extras');
 			group: 'default' with: #('all').
 	]
 ]
