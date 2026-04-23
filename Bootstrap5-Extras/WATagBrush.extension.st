@@ -120,6 +120,12 @@ WATagBrush >> gutterY: aNumber size: aString [
 ]
 
 { #category : '*Bootstrap5-Extras' }
+WATagBrush >> justifyContentBetween [
+
+	self class: 'justify-content-between'
+]
+
+{ #category : '*Bootstrap5-Extras' }
 WATagBrush >> marginEnd: aNumber [
 
 	self class: 'me-', aNumber asString

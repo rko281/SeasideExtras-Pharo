@@ -1,6 +1,19 @@
 Extension { #name : 'SBSHtmlCanvas' }
 
 { #category : '*Bootstrap5-Extras' }
+SBSHtmlCanvas >> bootstrapButton [
+
+	^ self brush: SBSButtonTag new
+]
+
+{ #category : '*Bootstrap5-Extras' }
+SBSHtmlCanvas >> bootstrapButton: aBlock [
+
+	^self bootstrapButton
+		with: aBlock
+]
+
+{ #category : '*Bootstrap5-Extras' }
 SBSHtmlCanvas >> columnUnits: anInteger [
 	
 	"Convenience for creating and configuring Bootstrap columns in a single message"
